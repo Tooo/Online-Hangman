@@ -1,0 +1,63 @@
+html {
+    font-family: sans-serif;
+}
+
+.page-title {
+  text-align: center;
+  color: white;
+  background-color: #003d7d;
+  border: 3px solid white;
+  padding: 12px 12px;
+}
+
+.guessing-word {
+    letter-spacing: 2px;
+    font-size: 30px;
+}
+
+.incorrect-string {
+    letter-spacing: 2px;
+    text-decoration: line-through;
+}
+
+.container {
+    display: table;
+    height: 100%;
+    width: 100%;
+}
+
+.table-cell {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    width: 50%;
+    padding: 1rem;
+}
+
+.home-image {
+    height: 100px;
+    width: 100px;
+}
+
+.play-button{
+    background-color: #003d7d;
+    font-size: 20px;
+    border-radius: 8px;
+    color: white;
+    width: 100px;
+}
+
+img {
+    height: 150px;
+    width: 150px;
+}
+
+body {
+    background-color: #d3d3d3;
+    text-align: center;
+    vertical-align: middle;
+}
+
+h3 {
+    color: blue;
+}

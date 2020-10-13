@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link th:href="@{/styles/main.css}" rel="stylesheet" />
+    <title>Online Hangman Game</title>
+</head>
+
+<div class="page-title">Online Hangman Game</div>
+
+<body>
+
+    <section class="container">
+        <div class="table-cell">
+            <h3>Rules</h3>
+            <p>A random word would be picked for each game</p>
+            <p>Guess a letter and submit it to see if it's part of the word</p>
+            <p>If it is, that letter would revealed in the word</p>
+            <p>If it isn't, the hangman would add a body part</p>
+            <p>You win if you guess the word before the 8th incorrect guess</p>
+            <p>Have fun!</p>
+        </div>
+
+        <div class="table-cell">
+            <p><img class="home-image" th:src="@{/images/man7.png}"></p>
+            <th:block th:text="${promptMessage.message}">message</th:block>
+            <p>Creator: Travis Chan</p>
+            <form action="#" th:action="@{/game}" method="post">
+                <button type="submit" class="play-button">Play</button>
+            </form>
+        </div>
+    </section>
+</body>
+</html>

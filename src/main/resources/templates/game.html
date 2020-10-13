@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link th:href="@{/styles/main.css}" rel="stylesheet" />
+    <title>Online Hangman Game</title>
+</head>
+
+<div class="page-title">Online Hangman Game</div>
+
+<body>
+
+    <section class="container" >
+        <div class="table-cell">
+            <h3>Game Information</h3>
+            <span>Game Number: </span><span th:text="${game.gameId}"></span><br/>
+            <span>Status: </span><span th:text="${game.gameState.getStringValue()}"></span><br/>
+            <span>Guesses: </span><span th:text="${game.guessCount}"></span><br/>
+            <span>Incorrect Guesses: </span><span th:text="${game.incorrectCount}"></span><br/>
+        </div>
+
+        <div class="table-cell">
+            <div th:switch="${game.incorrectCount}">
+                <img th:case="0" th:src="@{/images/man0.png}">
+                <img th:case="1" th:src="@{/images/man1.png}">
+                <img th:case="2" th:src="@{/images/man2.png}">
+                <img th:case="3" th:src="@{/images/man3.png}">
+                <img th:case="4" th:src="@{/images/man4.png}">
+                <img th:case="5" th:src="@{/images/man5.png}">
+                <img th:case="6" th:src="@{/images/man6.png}">
+                <img th:case="7" th:src="@{/images/man7.png}">
+            </div>
+            <div class="guessing-word" th:text="${game.guessingWord}"></div><br/>
+            <span class="incorrect-string" th:text="${game.getIncorrectString()}"></span>
+
+            <form action="#" th:action="@{/game/{id}(id=${game.gameId})}" th:object="${guess}" method="post">
+                <input type="text" maxlength="1" id="letter" name="letter"/>
+                <button type="submit" >Submit Guess</button>
+            </form>
+        </div>
+    </section>
+
+    <a th:href="@{/welcome}">Go back to welcome</a>
+</body>
+</html>

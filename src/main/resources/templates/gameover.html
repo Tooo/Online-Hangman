@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link th:href="@{/styles/main.css}" rel="stylesheet" />
+    <title>Online Hangman Game</title>
+</head>
+
+<div class="page-title">Online Hangman Game</div>
+
+<body>
+    <th:block th:text="${promptMessage.message}">message</th:block>
+    <div th:switch="${game.gameState.getStringValue()}">
+        <img th:case="'Won'" th:src="@{/images/manwin.png}">
+        <img th:case="'Lost'" th:src="@{/images/mandead.png}">
+    </div>
+    <span>Word: </span><span th:text="${game.word}"></span><br/>
+    <a th:href="@{/welcome}"> Go back to welcome</a>
+</body>
+</html>
