@@ -10,7 +10,7 @@ ca/cmpt213/a4/onlinehangman/model/RandomWord.java
  ca.cmpt213.a4.onlinehangman.model.RandomWord
 ca/cmpt213/a4/onlinehangman/model/Message.java
  ca.cmpt213.a4.onlinehangman.model.Message
-ca/cmpt213/a4/onlinehangman/Application.java
- ca.cmpt213.a4.onlinehangman.Application
 ca/cmpt213/a4/onlinehangman/controllers/HangmanController.java
  ca.cmpt213.a4.onlinehangman.controllers.HangmanController
+ca/cmpt213/a4/onlinehangman/Application.java
+ ca.cmpt213.a4.onlinehangman.Application
