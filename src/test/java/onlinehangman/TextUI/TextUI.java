@@ -5,8 +5,6 @@ import ca.cmpt213.a4.onlinehangman.model.GameState;
 
 import java.util.Scanner;
 
-// Name: Travis Chan, ID: 301358957, Email: tsc7@sfu.ca
-
 /**
  * TextUI is used to print out Hangman Game info in Text form
  */

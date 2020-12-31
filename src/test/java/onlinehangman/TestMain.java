@@ -4,8 +4,6 @@ import ca.cmpt213.a4.onlinehangman.model.Game;
 import ca.cmpt213.a4.onlinehangman.model.GameState;
 import onlinehangman.TextUI.TextUI;
 
-// Name: Travis Chan, ID: 301358957, Email: tsc7@sfu.ca
-
 /**
  * TestMain use to test the game in Text
  */
