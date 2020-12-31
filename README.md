@@ -1,6 +1,6 @@
 # Online Hangman
 <p align='center'>
-  <img src="src/main/resources/static/images/manwithbackground.png" width="200" height="200px">
+  <img src="src/main/resources/static/readme/manwithbackground.png" width="150px" height="150px">
 </p>
 
 An online hangman game using Spring Boot REST API.
