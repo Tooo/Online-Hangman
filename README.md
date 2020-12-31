@@ -20,3 +20,30 @@ https://github.com/Toooo123/Online-Hangman.git
 localhost:8080/welcome
 ```
 
+## Game Information
+### Rules
+A random word would be picked for each game.
+Guess a letter and submit it to see if it's part of the word.
+If it is, that letter would be revealed in the word.
+If it isn't, the hangman would add a body part.
+You win if you guess the word before the 8th incorrect guess.
+Have fun!
+
+### Random Words
+Words are chosen in [commonWords.txt](src/commonWords.txt).
+You may add or remove words by modifying the text file.
+
+
+
+## Sample Images
+### Home Screen
+![home](src/main/resources/static/readme/home.jpg)
+
+### In Progress Screen
+![inprogress](src/main/resources/static/readme/inprogress.jpg)
+
+### Win Screen
+![win](src/main/resources/static/readme/win.jpg)
+
+### Lose Screen
+![lost](src/main/resources/static/readme/lost.jpg)
