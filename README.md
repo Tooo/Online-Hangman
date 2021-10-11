@@ -12,7 +12,7 @@ Win by guessing the word before the 8th incorrect guess.
 2. Click "Get from VCS" or File->New->Project From Version Control
 3. Insert the following URL:
 ```
-https://github.com/Toooo123/Online-Hangman.git
+https://github.com/Tooo/Online-Hangman.git
 ```
 4. Run Application
 5. Open this URL on your web browser.
